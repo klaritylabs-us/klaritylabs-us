@@ -2,6 +2,18 @@
 
 We help U.S. payer–provider teams **verify and harden FHIR and integration payloads** before production traffic. Public repos here are **read-only reference exhibits**—small Rust checkers and cited READMEs—not our product engine and **not** a replacement for [HAPI](https://hapifhir.io/), [Firely](https://fire.ly/), or [Inferno](https://inferno.healthit.gov/).
 
+> **Published on GitHub: https://github.com/klaritylabs-us/klarity-fhir-exhibits; links go live as each repo is published.
+
+## How this relates to other tools
+
+| Tool class | Role |
+|------------|------|
+| **HL7 FHIR Validator**, **HAPI**, **Firely** | Full validation, servers, SDKs, IG packages |
+| **Inferno**, **Touchstone**, vendor cert suites | **Conformance** against test plans |
+| **These exhibits** | **Pre-flight construction** on synthetic fixtures—catch shape mistakes before wire traffic |
+
+Conformance tools test whether your **API behaves**; exhibits focus on whether your **payloads and pipes are built** to survive real partners.
+
 ## What these repos are
 
 | You get | You do not get |
@@ -14,4 +26,6 @@ We help U.S. payer–provider teams **verify and harden FHIR and integration pay
 
 **Editions:** **FHIR interoperability** (days 1–21, 23, 25–33) · **Claims / EDI sketch** (22, 24, 34, 35)—structural only, not payment or eligibility decisions.
 
-**Commercial work:** [klaritylabs.ai](https://klaritylabs.ai/) · 20-minute Scan: **sk@klaritylabs.ai**
+**Need this on your payloads or API?** 20-minute FHIR Scan — **sk@klaritylabs.ai** · [klaritylabs.ai](https://klaritylabs.ai/)
+
+**Commercial work:** [klaritylabs.ai](https://klaritylabs.ai/) · Independent verification (Klarity Sentinel™) and engineering services—exhibits do not ship the Sentinel engine or licensed rule packs.
